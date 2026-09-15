@@ -1,0 +1,131 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "evidence\\pre-gold\\clip_01\\gt.txt",
+  "gt_file": "gold\\clip_01\\gt.txt",
+  "pred_label": "PRED evidence\\pre-gold\\clip_01\\gt.txt",
+  "gt_label": "GT   gold\\clip_01\\gt.txt",
+  "metrics": {
+    "HOTA": 0.1779,
+    "DetA": 0.1691,
+    "AssA": 0.1881,
+    "LocA": 0.8921,
+    "IDF1": 0.3179,
+    "IDTP": 117,
+    "IDFP": 46,
+    "IDFN": 456,
+    "MOTA": 0.1239,
+    "MOTP": 0.8803,
+    "IDSW": 0,
+    "FP": 46,
+    "FN": 456,
+    "GT_boxes": 573,
+    "PRED_boxes": 163
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.3179347826086957,
+        "required": 0.8,
+        "passed": false
+      },
+      "MOTA": {
+        "value": 0.12390924956369986,
+        "required": 0.75,
+        "passed": false
+      },
+      "MOTP": {
+        "value": 0.8802920001393216,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": false
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [],
+    "fragmented_gt_tracks": [],
+    "partially_covered_gt_tracks": [
+      {
+        "gt_track": 1,
+        "covered": 38,
+        "gt_length": 190,
+        "ratio": 0.2
+      },
+      {
+        "gt_track": 4,
+        "covered": 19,
+        "gt_length": 95,
+        "ratio": 0.2
+      },
+      {
+        "gt_track": 5,
+        "covered": 12,
+        "gt_length": 60,
+        "ratio": 0.2
+      },
+      {
+        "gt_track": 7,
+        "covered": 17,
+        "gt_length": 85,
+        "ratio": 0.2
+      },
+      {
+        "gt_track": 3,
+        "covered": 9,
+        "gt_length": 43,
+        "ratio": 0.21
+      },
+      {
+        "gt_track": 6,
+        "covered": 12,
+        "gt_length": 56,
+        "ratio": 0.21
+      },
+      {
+        "gt_track": 8,
+        "covered": 7,
+        "gt_length": 33,
+        "ratio": 0.21
+      },
+      {
+        "gt_track": 2,
+        "covered": 3,
+        "gt_length": 11,
+        "ratio": 0.27
+      }
+    ],
+    "ghost_pred_tracks": [
+      {
+        "pred_track": 4,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          1,
+          186
+        ],
+        "length": 38
+      },
+      {
+        "pred_track": 7,
+        "reason": "đã có bbox trước khi track tham chiếu 6 xuất hiện",
+        "frames": [
+          81,
+          96
+        ],
+        "length": 4
+      }
+    ],
+    "id_switches": [],
+    "loose_boxes": [
+      {
+        "frame": 81,
+        "gt_track": 5,
+        "pred_track": 6,
+        "iou": 0.558
+      }
+    ],
+    "n_gt_tracks": 8,
+    "n_pred_tracks": 9
+  }
+}
