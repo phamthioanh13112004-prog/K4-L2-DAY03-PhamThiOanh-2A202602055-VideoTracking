@@ -1,0 +1,56 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "c:\\Users\\Administrator\\Downloads\\New folder\\K4-L2-DAY03-PhamThiOanh-2A202602055-VideoTracking\\annotations\\clip_01\\gt.txt",
+  "gt_file": "c:\\Users\\Administrator\\Downloads\\New folder\\K4-L2-DAY03-PhamThiOanh-2A202602055-VideoTracking\\gold\\clip_01\\gt.txt",
+  "pred_label": "PRED c:\\Users\\Administrator\\Downloads\\New folder\\K4-L2-DAY03-PhamThiOanh-2A202602055-VideoTracking\\annotations\\clip_01\\gt.txt",
+  "gt_label": "GT   c:\\Users\\Administrator\\Downloads\\New folder\\K4-L2-DAY03-PhamThiOanh-2A202602055-VideoTracking\\gold\\clip_01\\gt.txt",
+  "metrics": {
+    "HOTA": 1.0,
+    "DetA": 1.0,
+    "AssA": 1.0,
+    "LocA": 1.0,
+    "IDF1": 1.0,
+    "IDTP": 573,
+    "IDFP": 0,
+    "IDFN": 0,
+    "MOTA": 1.0,
+    "MOTP": 1.0,
+    "IDSW": 0,
+    "FP": 0,
+    "FN": 0,
+    "GT_boxes": 573,
+    "PRED_boxes": 573
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 1.0,
+        "required": 0.8,
+        "passed": true
+      },
+      "MOTA": {
+        "value": 1.0,
+        "required": 0.75,
+        "passed": true
+      },
+      "MOTP": {
+        "value": 1.0,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [],
+    "fragmented_gt_tracks": [],
+    "partially_covered_gt_tracks": [],
+    "ghost_pred_tracks": [],
+    "id_switches": [],
+    "loose_boxes": [],
+    "n_gt_tracks": 8,
+    "n_pred_tracks": 8
+  }
+}
