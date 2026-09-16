@@ -2,8 +2,8 @@
 
 Chép file này thành `reports/REPORT.md` rồi điền. Giữ nguyên các tiêu đề.
 
-Họ tên / nhóm: `...`
-Ngày: `...`
+Họ tên / nhóm: `Phạm Thị Oanh / T007`
+Ngày: `16/09/2026`
 
 ---
 
